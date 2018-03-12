@@ -1,0 +1,28 @@
+{
+  "name": "videotest",
+  "version": "1.0.0",
+  "description": "Trying out video.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BabyLizzy-FunTime-Lab/videoTest.git"
+  },
+  "keywords": [
+    "Test",
+    "Video"
+  ],
+  "author": "José Rasmussen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BabyLizzy-FunTime-Lab/videoTest/issues"
+  },
+  "homepage": "https://github.com/BabyLizzy-FunTime-Lab/videoTest#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.1",
+    "video.js": "^6.7.3"
+  }
+}
