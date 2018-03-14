@@ -9,8 +9,8 @@ server.use('/public', express.static(__dirname + '/public'));
 server.use(express.static('public'));
 
 // Useing bodyparser
-server.use(bodyparser.urlencoded({extended:true}));
-server.use(bodyparser.json());
+server.use(bodyParser.urlencoded({extended:true}));
+server.use(bodyParser.json());
 
 // Using Pug
 server.set("view engine", "pug");
