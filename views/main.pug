@@ -1,9 +1,11 @@
-//- Using 2 spaces for indentation
+//- Using Tabs for indentation
 html
   head
     title video.js test
     meta(chaset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    //- custom css
+    link(rel="stylesheet" href="/public/style/main.css")
     //- jquery
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     //- Bootsrtap 4
@@ -13,14 +15,14 @@ html
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
     //- video.js
     link(rel="stylesheet" href="http://vjs.zencdn.net/6.6.3/video-js.css")
-    script(src="http://vjs.zencdn.net/6.6.3/video.js")
 
   body
-    div.container
-      h1 Video Player
-      video(id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}")
-        source(src="MY_VIDEO.mp4" type='video/mp4')
-        source(src="MY_VIDEO.webm" type='video/webm') 
+    div.container.h-100.align-items-center
+      h1.text-center Video Player
+      video(id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="/public/images/player_poster.jpg" data-setup="{}")
+        source(src="http://localhost:8000/LizzyVideo" type='video/mp4')
+        //- source(src="MY_VIDEO.webm" type='video/webm') 
         p.vjs-no-js
           | To view this video please enable JavaScript, and consider upgrading to a web browser that
           a(href="http://videojs.com/html5-video-support/" target="_blank")  supports HTML5 video. 
+    script(src="http://vjs.zencdn.net/6.6.3/video.js")
